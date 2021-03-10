@@ -9,7 +9,7 @@ const JulianDate2000 = 2451545
 var ZeroDate = time.Date(-4713, 11, 24, 12, 0, 0, 0, time.UTC)
 
 // TimeToJulianDate converts time.Time to Julian date.
-func DateTimeToJulianDate(t time.Time) float64 {
+func TimeToJulianDate(t time.Time) float64 {
 	month := int(t.Month())
 	a := (14 - month) / 12
 	y := t.Year() + 4800 - a
