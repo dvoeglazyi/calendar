@@ -21,7 +21,7 @@ func TimeToJulianDate(t time.Time) float64 {
 
 // TimeToJulianDaysAndTime converts time.Time to Julian days (an integer value) and Julian time (a fractional number).
 func TimeToJulianDaysAndTime(t time.Time) (float64, float64) {
-	julianDate := DateTimeToJulianDate(t)
+	julianDate := TimeToJulianDate(t)
 	julianDays := float64(int(julianDate))
 	return julianDays, julianDate - julianDays
 }
